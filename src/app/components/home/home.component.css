@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+.seccion1 {
+  position: relative;
+  background-image: url('src\assets\img\apartamento.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.seccion2 {
+  position: relative;
+  background-image: url('src/assets/img/fondoI.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  overflow: hidden;
+}
+.imagen-container {
+  text-align: center;
+}
+
+.imagen {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+.seccionM{
+  background: rgb(56, 91, 248)
+}
+
+.seccionM p{
+  font-size: 3em;
+  font-weight: 800;
+  white-space: nowrap;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+}
+
+#texto3D {
+  position: absolute;
+  top: 50%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  color: rgb(73, 70, 65);
+  text-align: center;
+  text-shadow: 2px 2px 5px white;
+  max-width: 80%;
+}
+#texto3D h1 {
+  font-size: 4em;
+  font-weight: 900;
+  white-space: nowrap;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.edit2 {
+  font-size: 2em;
+  font-weight: bold;
+  white-space: nowrap;
+  font-family: 'Montserrat', sans-serif;
+  text-shadow: 2px 2px 5px white;
+
+  color: black;
+
+  margin-top: 1em;
+}
+
+#texto3D p {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.imagen {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+@media (max-width: 768px) {
+
+
+  #texto3D p {
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  #texto3D {
+    top: 60%;
+    left: 46%;
+  }
+
+  #texto3D h1 {
+    font-size: 2.7em;
+  }
+
+  .edit2{
+    font-size: 1.8em;
+  }
+  .cont3 {
+    text-align: center;
+    margin-left: 7%;
+  }
+
+  .imagen-container {
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+
+  #texto3D p {
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  #texto3D {
+    top: 60%;
+    left: 48%;
+  }
+
+  #texto3D h1 {
+    font-size: 2em;
+  }
+
+  .edit2{
+    font-size: 1.5em;
+  }
+  .cont3 {
+    text-align: center;
+    margin-left: 7%;
+  }
+
+  .imagen-container {
+    text-align: center;
+  }
+}
