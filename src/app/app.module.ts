@@ -13,6 +13,10 @@ import { Modelo3DComponent } from './components/home/modelo3D.component';;
 import { Modelo3D3Component } from './components/about/modelo3D3.component';
 import { Modelo3D2Component } from './components/home/modelo3D2.component';
 // SERVICIOS
+import { HeroesService } from './components/services/heroes.service';
+import { HeroeComponent } from './components/heroe/heroe.component';
+import { HeroesComponent } from './components/heroes/heroes.component';
+
 
 @NgModule({
   declarations: [
@@ -24,13 +28,17 @@ import { Modelo3D2Component } from './components/home/modelo3D2.component';
     Modelo3DComponent,
     Modelo3D2Component,
     Modelo3D3Component,
+    HeroesComponent,
+    HeroeComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     APP_ROUTING
   ],
-  providers: [],
+  providers: [
+    HeroesService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -3,11 +3,11 @@ import { HeroesService,Heroe } from '../services/heroes.service';
 import {Router} from '@angular/router';
 
 @Component({
-  selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css']
+  selector: 'app-heroes',
+  templateUrl: './heroes.component.html',
 })
-export class HomeComponent {
+export class HeroesComponent implements OnInit{
+
   heroes:Heroe[] = [];
 
   constructor(
@@ -26,3 +26,4 @@ export class HomeComponent {
     this.router.navigate(['/proyecto',idx]);
   }
 }
+
