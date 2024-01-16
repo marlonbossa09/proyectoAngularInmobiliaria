@@ -16,7 +16,7 @@ import { Modelo3D2Component } from './components/home/modelo3D2.component';
 import { HeroesService } from './components/services/heroes.service';
 import { HeroeComponent } from './components/heroe/heroe.component';
 import { HeroesComponent } from './components/heroes/heroes.component';
-
+import { Modelo3D4Component } from './components/home/modelo3D4.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +29,9 @@ import { HeroesComponent } from './components/heroes/heroes.component';
     Modelo3D2Component,
     Modelo3D3Component,
     HeroesComponent,
-    HeroeComponent
+    HeroeComponent,
+    Modelo3D3Component,
+    Modelo3D4Component
   ],
   imports: [
     BrowserModule,

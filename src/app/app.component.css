@@ -6,3 +6,17 @@
 
   color: white;
 }
+
+@media (max-width: 768px) {
+
+}
+
+@media (max-width: 480px) {
+  .tamañoLetra1{
+    font-size: 35px;
+  }
+
+  .tamañoLetra2{
+    font-size: 25px;
+  }
+}

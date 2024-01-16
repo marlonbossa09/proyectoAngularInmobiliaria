@@ -23,17 +23,17 @@
 <section class="seccion2 d-flex align-items-center">
   <div class="cont2 text-center">
     <h1 class="edit2 pt-5">
-      Viviendo en el corazón de la comodidad: Tu espacio, tu estilo.
+      <strong>Viviendo en el corazón de la comodidad: Tu espacio, tu estilo.</strong>
     </h1>
     <div class="cont3">
       <app-modelo3d2></app-modelo3d2>
     </div>
   </div>
 </section>
-<section class="seccion3 container main-container d-flex align-items-center">
-  <div class="cont2 text-center">
+<section class="seccion3 container main-container">
+  <div class="cont3 text-center">
     <h1 class="edit3 pt-2">
-      Viviendo en el corazón de la comodidad: Tu espacio, tu estilo.
+      Tu hogar, nuestro compromiso.
     </h1>
     <div class="cont3">
       <p class="text-justify pt-3 pb-2">
@@ -44,44 +44,45 @@
         se adaptan a todos los estilos de vida.
       </p>
       <p class="text-justify pb-2">
-        Nos enorgullece no solo
-        ofrecer propiedades de alta calidad, sino también construir relaciones
-        sólidas basadas en la confianza y la transparencia. Trabajamos
-        incansablemente para proporcionar un servicio excepcional desde el
-        primer contacto hasta la entrega de llaves, asegurándonos de que cada
-        paso del camino sea una experiencia sin complicaciones.
+        Nos enorgullece no solo ofrecer propiedades de alta calidad, sino
+        también construir relaciones sólidas basadas en la confianza y la
+        transparencia. Trabajamos incansablemente para proporcionar un servicio
+        excepcional desde el primer contacto hasta la entrega de llaves,
+        asegurándonos de que cada paso del camino sea una experiencia sin
+        complicaciones.
       </p>
       <p class="text-justify pb-2">
-
         inmobiliaria, no solo vendemos propiedades, creamos hogares. Tu búsqueda
         del lugar perfecto termina aquí, donde cada detalle cuenta y cada
         cliente es parte de nuestra historia de éxito. ¡Bienvenido a tu próximo
         capítulo de vida con nosotros!
       </p>
-
     </div>
-    <h1 class="lead display-4 p-5">
-      Proyectos inmobiliarios
-    </h1>
+    <h1 class="lead display-4 p-5 letraIn">Proyectos inmobiliarios</h1>
     <div class="card-columns">
-
-      <div class="card animated fadeIn fast" *ngFor="let heroe of heroes; let i = index">
-        <img [src]="heroe.img" class="card-img-top" [alt]="heroe.nombre">
+      <div
+        class="card animated fadeIn fast"
+        *ngFor="let heroe of heroes; let i = index"
+      >
+        <img [src]="heroe.img" class="card-img-top" [alt]="heroe.nombre" />
         <div class="card-body">
-          <h5 class="card-title">{{heroe.nombre}}</h5>
-          <p class="card-text">{{heroe.bio}}</p>
+          <h5 class="card-title">{{ heroe.nombre }}</h5>
+          <p class="card-text">{{ heroe.bio }}</p>
 
-          <button (click)="verHeroes(i)" type="button" class="btn btn-outline-primary btn-block">Ver más...</button>
+          <button
+            (click)="verHeroes(i)"
+            type="button"
+            class="btn btn-outline-primary btn-block"
+          >
+            Ver más...
+          </button>
 
-    <!--
+          <!--
        <a [routerLink]="['/heroe',i]" class="btn btn-outline-primary">Ver más...</a>
 
        -->
-
         </div>
       </div>
     </div>
-
   </div>
-
 </section>

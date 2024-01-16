@@ -1,5 +1,8 @@
-<div class="container main-container">
-  <h1 class="animated fadeIn">{{ heroe.nombre }}</h1>
+<div class="container main-container letra p-4">
+  <div class="overlay"></div>
+
+  <app-modelo3d4></app-modelo3d4>
+  <h1 class="animated fadeIn"><strong>{{ heroe.nombre }}</strong></h1>
   <hr />
 
   <div class="row animated fadeIn fast pb-5">
@@ -11,11 +14,11 @@
       >
     </div>
 
-    <div class="col-md-8">
-      <h3>{{ heroe.nombre }}</h3>
+    <div class="col-md-8 division">
+      <h3><strong>{{ heroe.nombre }}</strong></h3>
       <hr />
       <p>
-        {{ heroe.bio }}
+        <strong>{{ heroe.bio }}</strong>
       </p>
 
       <div>
@@ -32,9 +35,9 @@
           alt=""
         />
       </div>
-      <h3>Ubicación</h3>
+      <h3><strong>Ubicación</strong></h3>
       <p>
-        {{ heroe.ubicacion }}
+        <strong> {{ heroe.ubicacion }}</strong>
       </p>
     </div>
   </div>
